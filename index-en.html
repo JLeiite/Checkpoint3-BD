@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Connect Food</title>
+</head>
+<body class="bg-light">
+	<nav class="sticky-top">
+		<ul>
+			<li class="nav-item d-none d-md-block">
+				<a href="index.html">
+					<img src="img/br-flag.png" alt="Portuguese">
+				</a>
+			</li>
+			<li class="nav-item d-none d-md-block">
+				<a href="index-en.html">
+					<img src="img/en-flag.png" alt="English">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 banner">
+				<div class="texto-banner">
+					<h1>Connect Food</h1>
+					<h4>Autonomy to sell your delivery foods on your own website</h4>
+					<a href="index-en.html#testar">
+						<button class="btn btn-success">Test now</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="servicos">
+		<div class="row card-deck">
+			<h2>Services and benefits</h2>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif1.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Integration with your business</h5>
+					<p class="card-text">Have a database on your own website to control orders, 
+						customer records and much more.</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif2.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Full platform</h5>
+					<p class="card-text">Get reports of your sales, purchase history quickly.</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif3.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Reduce your expenses</h5>
+					<p class="card-text">Pay once in a month without sales limitation.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <!-- TOAST -->
+
+	<h2 id="testar">Test our database</h2>
+	<div class="container toast-button">
+		<div class="row justify-content-around">
+			<div class="create col-sm-12 text-center">
+				<button onclick="toastID(), spanText1()" class="btn btn-primary" id="myAlert m1">Customers</button>
+				<button onclick="toastID(), spanText2()" class="btn btn-primary" id="myAlert m2">Categories</button>
+				<button onclick="toastID(), spanText3()" class="btn btn-primary" id="myAlert m3">Products</button>
+				<button onclick="toastID(), spanText4()" class="btn btn-primary" id="myAlert m4">Requests</button>
+			</div>
+			<div class="select col-sm-12 text-center">
+				<button onclick="toastID(), spanText5()" class="btn btn-primary" id="myAlert m5">Check order time</button>
+				<button onclick="toastID(), spanText6()" class="btn btn-primary" id="myAlert m6">Update customer address</button>
+			</div>
+			<div class="vp col-sm-12 text-center">
+				<button onclick="toastID(), spanText7()" class="btn btn-primary" id="myAlert m7">Verify the products' quantity on combos</button>
+				<button onclick="toastID(), spanText8()" class="btn btn-primary" id="myAlert m8">Search for total ​​sales per customer</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="toastTrigger">
+		<div class="toast-container">		
+			<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<img src="img/mysql.png" class="rounded me-2" alt="MySQL">
+				<strong class="me-auto">MySQL</strong>
+				<small class="text-muted">now</small>
+				<button type="button" onclick="toastClose()" class="btn-close" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				<span id="demo"></span>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="sobre_nos" class="conteiner-fluid">
+		<div class="row integrantes">
+		  <div class="col-sm-12 col-md-3">
+			<h5>Bruno Chaves</h5>
+			<p>
+			  <a href="#">
+				DataBase ConnectFood
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Felipe e Dennys</h5>
+			<p>
+			  <a href="https://www.linkedin.com/in/dennysterra/">
+				CRUD ConnectFood
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Juliana Leite</h5>
+			<p>
+			  <a href="https://www.linkedin.com/in/jleiite/">
+				Create procedures
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Samuel Carvalho</h5>
+			<p>
+			  <a href="https://github.com/Felipeestevao01">
+				Create Views
+			  </a>
+			</p>
+		  </div>
+		</div>
+
+		<span>Checkpoint 3 desenvolvido em setembro de 2022</span>
+		
+	</footer>
+
+
+	<!-- Inclusão dos efeitos Toast-->
+	<script src="js/script.js"></script>
+
+</body>
+</html>

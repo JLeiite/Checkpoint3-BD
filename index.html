@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="img/favicon.png"/>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Connect Food</title>
+</head>
+<body class="bg-light">
+	<nav class="sticky-top">
+		<ul>
+			<li class="nav-item d-none d-md-block">
+				<a href="index.html">
+					<img src="img/br-flag.png" alt="Português">
+				</a>
+			</li>
+			<li class="nav-item d-none d-md-block">
+				<a href="index-en.html">
+					<img src="img/en-flag.png" alt="Inglês">
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12 banner">
+				<div class="texto-banner">
+					<h1>Connect Food</h1>
+					<h4>Autonomia para suas vendas online de delivery</h4>
+					<a href="index.html#testar">
+						<button class="btn btn-success">Testar agora</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" id="servicos">
+		<div class="row card-deck">
+			<h2>Serviços e Vantagens</h2>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif1.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Integração com seu negócio</h5>
+					<p class="card-text">Tenha um banco de dados em seu próprio site para controle de pedidos, 
+						cadastros de clientes e muito mais.</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif2.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Plataforma completa</h5>
+					<p class="card-text">Consiga relatórios de seus clientes, histórico de compras de forma
+						rápida.	</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 card">
+				<div class="card-body">
+					<img class="img-card" src="img/gif3.gif" alt="Banco de Dados"/>
+					<h5 class="card-title">Reduza seus gastos</h5>
+					<p class="card-text">Pague apenas uma vez por mês sem limites de vendas.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+  <!-- TOAST -->
+
+	<h2 id="testar">Teste nosso banco</h2>
+	<div class="container toast-button">
+		<div class="row justify-content-around">
+			<div class="create col-sm-12 text-center">
+				<button onclick="toastID(), spanText1()" class="btn btn-primary" id="myAlert m1">Clientes</button>
+				<button onclick="toastID(), spanText2()" class="btn btn-primary" id="myAlert m2">Categorias</button>
+				<button onclick="toastID(), spanText3()" class="btn btn-primary" id="myAlert m3">Produtos</button>
+				<button onclick="toastID(), spanText4()" class="btn btn-primary" id="myAlert m4">Pedidos</button>
+			</div>
+			<div class="select col-sm-12 text-center">
+				<button onclick="toastID(), spanText5()" class="btn btn-primary" id="myAlert m5">Consultar horário de pedidos</button>
+				<button onclick="toastID(), spanText6()" class="btn btn-primary" id="myAlert m6">Atualizar endereço de clientes</button>
+			</div>
+			<div class="vp col-sm-12 text-center">
+				<button onclick="toastID(), spanText7()" class="btn btn-primary" id="myAlert m7">Consultar quantidade de produtos nos combos</button>
+				<button onclick="toastID(), spanText8()" class="btn btn-primary" id="myAlert m8">Consultar valores totais de vendas por cliente</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="toastTrigger">
+		<div class="toast-container">		
+			<div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header">
+				<img src="img/mysql.png" class="rounded me-2" alt="MySQL">
+				<strong class="me-auto">MySQL</strong>
+				<small class="text-muted">agora mesmo</small>
+				<button type="button" onclick="toastClose()" class="btn-close" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				<span id="demo"></span>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer id="sobre_nos" class="conteiner-fluid">
+		<div class="row integrantes">
+		  <div class="col-sm-12 col-md-3">
+			<h5>Bruno Chaves</h5>
+			<p>
+			  <a href="#">
+				DataBase ConnectFood
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Felipe e Dennys</h5>
+			<p>
+			  <a href="#">
+				CRUD ConnectFood
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Juliana Leite</h5>
+			<p>
+			  <a href="#">
+				Create procedures
+			  </a>
+			</p>
+		  </div>
+
+		  <div class="col-sm-12 col-md-3">
+			<h5>Samuel Carvalho</h5>
+			<p>
+			  <a href="#">
+				Create Views
+			  </a>
+			</p>
+		  </div>
+		</div>
+
+		<span>Checkpoint 3 desenvolvido em setembro de 2022</span>
+		
+	</footer>
+
+
+	<!-- Inclusão dos efeitos Toast-->
+	<script src="js/script.js"></script>
+
+</body>
+</html>
