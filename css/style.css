@@ -12,6 +12,9 @@ nav ul{
     display: inline-flex;
     align-content: right;
 }
+nav li{
+    list-style: none;
+}
 ul img {
     max-width: 1.5em;
     margin-right: 1em;
